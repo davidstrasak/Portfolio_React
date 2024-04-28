@@ -1,16 +1,7 @@
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Blog() {
-  return <h2>Blog</h2>;
-}
+import { HashRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Home from "./Home"
+import About from "./About"
+import Projects from "./Projects"
 
 function App() {
   return (
@@ -27,7 +18,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about/" element={<About />} />
-            <Route path="/blog/" element={<Blog />} />
+            <Route path="/blog/" element={<Projects />} />
         </Routes>
       </div>
     </Router>
