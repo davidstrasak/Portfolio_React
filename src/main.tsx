@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import AppRouter from "./AppRouter.tsx"
 import App from './App.tsx'
 import './index.css'
 
