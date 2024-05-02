@@ -7,26 +7,41 @@ import Projects from "../Projects";
 const Header: React.FC = () => {
   return (
     <Router>
-      <header className="flex justify-end items-center mt-8 mb-16">
-        <nav>
-          <ul className="flex space-x-4">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-          </ul>
-        </nav>
+      <header className="fixed md:pt-10 pb-5 w-4/5 lg:w-3/5 bg-black z-10 font-bold">
+        <div className="flex flex-col md:flex-row justify-between items-left">
+          <div>
+            <Link to="/" className="underline">
+              Bc. David Strašák
+            </Link>
+          </div>
+          <nav className="md:items-left">
+            <ul className="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
+              <li>
+                <Link to="/projects" className="underline">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/CV" className="underline">
+                  CV
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="underline">
+                  About me
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about/" element={<About />} />
-        <Route path="/projects/" element={<Projects />} />
-      </Routes>
+      <div className="relative top-44 lg:top-36">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about/" element={<About />} />
+          <Route path="/projects/" element={<Projects />} />
+        </Routes>
+      </div>
     </Router>
   );
 };

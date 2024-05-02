@@ -8,6 +8,8 @@ export default {
       },
       textColor: {
         greenyellow: "#ADFF2F",
+        neonblue: "#00FFFF",
+        yellow: "#FFFF00",
       },
     },
   },

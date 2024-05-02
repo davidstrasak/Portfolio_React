@@ -1,15 +1,30 @@
 // import react from "react"
 
+import React, { useEffect } from "react";
+
 function Home() {
+  useEffect(() => {
+    const handleKeyUp = (event: KeyboardEvent) => {
+      if (event.key === "Enter") {
+        window.location.href = "Portfolio_React#/projects";
+      }
+    };
+    document.addEventListener("keyup", handleKeyUp);
+    return () => {
+      document.removeEventListener("keyup", handleKeyUp);
+    };
+  }, []);
+
   return (
     <div className="">
+      <h1 className="text-5xl font-bold mb-5">Hello, I am DAVID.</h1>
+      <h2 className="text-yellow font-bold">
+        Dabbling Around (in) Various Interesting Disciplines.
+      </h2>
       <br />
-      <h1>Hello, I am DAVID.</h1>
-      <h2>Dabbling Around (in) Various Interesting Disciplines.</h2>
-      <br />
-      <p>Welcome to the</p>
-      <p>matrix of my making.</p>
-      <p>
+      <p className="inline">Welcome to the </p>
+      <p className="inline text-neonblue">matrix of my making. </p>
+      <p className="inline">
         Since my CV is just the compact version of my skills, I've rigged up
         this portfolio with the other slick projects you did not see coming.
       </p>
