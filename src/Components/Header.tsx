@@ -7,7 +7,7 @@ import Projects from "../Projects";
 const Header: React.FC = () => {
   return (
     <Router>
-      <header className="fixed md:pt-10 pb-5 w-4/5 lg:w-3/5 bg-black z-10 font-bold">
+      <header className="fixed md:pt-10 pb-5 w-4/5 lg:w-3/5 bg-base-100 z-10 font-bold">
         <div className="flex flex-col md:flex-row justify-between items-left">
           <div>
             <Link to="/" className="underline">

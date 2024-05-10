@@ -1,6 +1,6 @@
 // import react from "react"
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 function Home() {
   useEffect(() => {
@@ -18,12 +18,12 @@ function Home() {
   return (
     <div className="">
       <h1 className="text-5xl font-bold mb-5">Hello, I am DAVID.</h1>
-      <h2 className="text-yellow font-bold">
+      <h2 className="text-secondary font-bold">
         Dabbling Around (in) Various Interesting Disciplines.
       </h2>
       <br />
       <p className="inline">Welcome to the </p>
-      <p className="inline text-neonblue">matrix of my making. </p>
+      <p className="inline text-accent">matrix of my making. </p>
       <p className="inline">
         Since my CV is just the compact version of my skills, I've rigged up
         this portfolio with the other slick projects you did not see coming.
