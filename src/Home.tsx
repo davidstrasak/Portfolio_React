@@ -35,7 +35,7 @@ function Home() {
       <br />
       <br />
       <br />
-      <p>press ENTER to load the projects:</p>
+      <p className="invisible md:visible">press ENTER to load the projects:</p>
     </div>
   );
 }
