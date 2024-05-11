@@ -3,10 +3,11 @@
 import { useEffect } from "react";
 
 function Home() {
+  // Checking for the Enter key press to navigate to the projects page
   useEffect(() => {
     const handleKeyUp = (event: KeyboardEvent) => {
       if (event.key === "Enter") {
-        window.location.href = "Portfolio_React#/projects";
+        window.location.href = "#/Projects";
       }
     };
     document.addEventListener("keyup", handleKeyUp);
@@ -15,6 +16,7 @@ function Home() {
     };
   }, []);
 
+  //webpage content
   return (
     <div className="">
       <h1 className="text-5xl font-bold mb-5">Hello, I am DAVID.</h1>

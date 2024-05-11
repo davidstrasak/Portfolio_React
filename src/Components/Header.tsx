@@ -18,11 +18,12 @@ const Header: React.FC = () => {
             </button>
           </div>
 
+          {/* Rest of the navbar */}
           <nav className="md:items-left">
             <ul className="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
               <li>
                 <button className="btn btn-ghost btn-lg text-3xl">
-                  <Link to="/projects" className="underline">
+                  <Link to="/Projects" className="underline">
                     Projects
                   </Link>
                 </button>
@@ -36,7 +37,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <button className="btn btn-ghost btn-lg text-3xl">
-                  <Link to="/about" className="underline">
+                  <Link to="/About" className="underline">
                     About me
                   </Link>
                 </button>
@@ -48,8 +49,8 @@ const Header: React.FC = () => {
       <div className="relative top-44 lg:top-36">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about/" element={<About />} />
-          <Route path="/projects/" element={<Projects />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>
